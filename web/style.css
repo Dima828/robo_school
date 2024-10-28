@@ -12,6 +12,7 @@ html{
     font-family: var(--font-family);
     line-height: 160%;
     min-width: 320px;
+    color: var(--color-blue-dark);
 }
 
 a{
@@ -134,7 +135,7 @@ li{
 
 .hero__inner{
     display: flex;
-    gap: 30px;
+    gap: 100px;
 }
 
 .contant{
@@ -155,6 +156,55 @@ li{
     font-weight: 400;
     max-width: 478px;
     margin-bottom: 50px;
+}
+
+
+/* Info */
+
+.info{
+    padding-top: 110px;
+}
+
+.info__inner{
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+}
+
+.definition__text{
+    font-size: 30px;
+    max-width: 891px;
+    line-height: 48px;
+}
+.info__item{
+    max-width: 400px;
+    width: 100%;
+}
+
+.info__list{
+    display: flex;
+    column-gap: 30px;
+}
+
+.info__item-titel{
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--color-accent);
+    line-height: 112px;
+}
+
+.info__item-desc{
+    font-size: 16px;
+    color: rgba(20, 16, 36,0.7);
+    line-height: 28.8px;
+}
+
+@media screen and (max-width:1150px) {
+    .info__list{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 945px) {
