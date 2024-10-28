@@ -19,6 +19,16 @@ a{
     color: currentColor;
 }
 
+.btn{
+    max-height: 80px;
+    max-width: 260px;
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius);
+    padding: 25px 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
 ul,
 li{
     list-style-type: none;
@@ -55,11 +65,18 @@ li{
 
 /* Header */
 
+
+.header{
+    background-color: var(--color-blue-dark);
+}
+
 .header__inner{
+    max-width: 1750px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--color-blue-dark);
     color: var(--color-white);
     padding: 30px 15px;
     gap: 10px;
@@ -100,6 +117,46 @@ li{
     display: none;
 }
 
+/* Hero */
+
+.hero{
+    background-color: var(--color-blue-dark);
+    padding-top: 85px;
+    color: var(--color-white);
+}
+
+.hero__img{
+    height: auto;
+    max-width: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero__inner{
+    display: flex;
+    gap: 30px;
+}
+
+.contant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__title{
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 78px;
+}
+
+.hero__desc{
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 478px;
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width: 945px) {
     .header__inner{
         padding-block: 20px;
@@ -120,7 +177,13 @@ li{
         border: 1px solid var(--color-white);
     }
     .header__nav{
+        overflow: hidden;
         order: 2;
+    }
+
+    .header__nav label{
+        display: block;
+        min-width: 45px;
     }
 
     #checkbox-menu:checked + label .touch li{
@@ -169,8 +232,31 @@ li{
     }
 
     .mobile__btn{
-        width: 105px;
+        width: 45px;
         display: flex;
+    }
+
+    .hero__inner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero__title{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .contant{
+        text-align: center;
+    }
+
+    .hero__bnt{
+        align-self: center;
+    }
+
+    .hero__desc{
+        font-size: 16px;
     }
 }
 
