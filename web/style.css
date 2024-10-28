@@ -184,6 +184,7 @@ li{
 .info__list{
     display: flex;
     column-gap: 30px;
+    padding-bottom: 120px;
 }
 
 .info__item-titel{
@@ -199,8 +200,54 @@ li{
     line-height: 28.8px;
 }
 
+/* perspercive */
+
+.perspercive{
+    background-color: var(--color-light-gray);
+    padding-block: 100px;
+}
+
+.perspective__title{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 60px;
+}
+
+.perspective__list{
+    display: flex;
+    gap: 30px;
+}
+
+.list__item{
+    max-width: 360px;
+    width: 100%;
+}
+
+.list__item-title{
+    font-size: 24px;
+    line-height: 38.4px;
+    margin-bottom: 20px;
+}
+
+.list__item-desc{
+    line-height: 28.8px;
+    color: rgba(20, 16, 36,0.7);
+    font-size: 18px;
+}
+
+.item__sup{
+    cursor: pointer;
+}
+
 @media screen and (max-width:1150px) {
     .info__list{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .perspective__list{
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
@@ -317,6 +364,10 @@ li{
     }
 
 
+}
+
+@media screen and (max-width: 320px) {
+    
 }
 
 
