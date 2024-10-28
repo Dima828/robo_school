@@ -240,6 +240,50 @@ li{
     cursor: pointer;
 }
 
+/* Professionals */
+
+.professionals{
+    padding-block: 120px;
+}
+
+.professionals__title{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 60px;
+}
+.professionals__people{
+    height: auto;
+    max-width: 360px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.professionals__list{
+    display: flex;
+    column-gap: 40px;
+}
+
+.professional__name{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38.4px;
+}
+
+.competence{
+    font-size: 18px;
+    line-height: 28.8px;
+    color: rgba(20, 16, 36, 0.7);
+    margin-bottom: 20px;
+}
+
+.professional__info{
+    color: var(--color-accent);
+    font-size: 18px;
+    line-height: 28.8px;
+}
+
 @media screen and (max-width:1150px) {
     .info__list{
         flex-wrap: wrap;
@@ -361,6 +405,10 @@ li{
 
     .header__logo{
         font-size: 18px;
+    }
+
+    .professionals__list{
+        flex-direction: column;
     }
 
 
